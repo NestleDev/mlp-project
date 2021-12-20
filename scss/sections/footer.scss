@@ -1,0 +1,40 @@
+.footer{
+    background-color: $base-color;
+    padding: 100px 0 50px 0;
+    &__row{
+        display: flex;
+        &:not(:last-child){
+            margin-bottom: 50px;
+        }
+    }
+    &__cell{
+        &:nth-child(2){
+            margin-left: 115px;
+        }
+        &:nth-child(3){
+            margin-left: 140px;
+        }
+        &:nth-child(4){
+            margin-left: 95px;
+        }
+    }
+    &__slogan{
+        color: $white-color;
+        font-family: $custom-family;
+        font-size: 32px;
+        margin-bottom: 40px;
+        white-space: nowrap;
+    }
+    &__form{
+        margin-bottom: 40px;
+    }
+    &__socials{
+        margin-left: 15px;
+    }
+    &__copyright{
+        text-align: center;
+    }
+    &__policy{
+        color: rgba($white-color, .25);
+    }
+}

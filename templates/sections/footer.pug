@@ -1,0 +1,18 @@
+footer.footer
+    .container
+        .footer__row
+            .footer__cell
+               .footer__slogan= data.footer.slogan
+               .footer__policy !{data.policy}
+            .footer__cell
+                +menu(data.footer.menu_1, 'column')
+            .footer__cell
+                +menu(data.footer.menu_2, 'column')
+            .footer__cell
+                .footer__form
+                    include ../components/form.pug
+                .footer__socials
+                    +socials(data.footer.socials)
+        .footer__copyright
+            .copyright !{data.copyright}
+            a.link(href=`mailto:${data.email}`)= data.email

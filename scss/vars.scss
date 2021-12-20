@@ -1,0 +1,30 @@
+//container settings
+$container-size: 1240px;
+$container-padding: 20px;
+$container-wide-size: 1320px;
+
+//media settings
+$bp-laptops: 992px;
+$bp-tablets: 768px;
+$bp-phones: 480px;
+
+//text settings
+$base-size: 16px;
+$base-line: 40px;
+
+//font settings
+$font-url: 'https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:wght@400;500;700&display=swap';
+$base-family: 'Poppins', sans-serif;
+$custom-family: 'Bowlby One SC', cursive;
+$base-weight: 400;
+
+//colors settings
+$base-color: #0B1B26;
+$accent-color: #F7C032;
+$white-color: #fff;
+$violet-color: #B54ADB;
+$color-grey-light: #F2F2F2;
+$color-grey: #DADCE5;
+
+//animation
+$transition-time: .3s;

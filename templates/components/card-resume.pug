@@ -1,0 +1,10 @@
+mixin card-resume(data) 
+    .card-resume 
+        .card-resume__photo 
+            img.card-resume__img(src=`./images/${data.photo}`, alt="photo")
+        .card-resume__desc 
+            h3.card-resume__name= data.name
+            .card-resume__occ= data.occ
+            if data.desc
+                .card-resume__text= data.desc
+

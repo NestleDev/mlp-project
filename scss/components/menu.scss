@@ -1,0 +1,25 @@
+.menu{
+    &__list{
+        display: flex;
+    }
+    &__item:not(:first-child){
+        margin-left: 20px;
+    }
+    &__link{
+        font-size: 14px;
+        font-weight: 500;
+        white-space: nowrap; 
+    }
+    &_column{
+        .menu__list{
+            flex-direction: column;
+        }
+        .menu__item{
+            margin-left: 0;
+        }
+        .menu__link{
+            font-size: 16px;
+            color: $white-color;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.card-resume{
+    &__photo{
+        margin-bottom: 30px;
+    }
+    &__desc{
+        text-align: center;
+    }
+    &__name{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &__occ{
+        font-size: 14px;
+        color: rgba($base-color, .25);
+    }
+    &__text{
+        font-size: 14px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,10 @@
+include ../components/card.pug
+
+section.overview
+    .container
+        +card(
+            'men.png', 
+            data.overview.title, 
+            data.overview.desc,
+            data.socials
+        )

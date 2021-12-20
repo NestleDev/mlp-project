@@ -1,0 +1,8 @@
+section.partners 
+    .container 
+        h2.title.title_color_violet.partners__title= data.partners.title
+        .partners__desc= data.partners.desc
+        ul.partners__list
+            each item in data.partners.items 
+                li.partners__item
+                    div(class=`partners__img${item == 2 ? ` partners__img_2` : ''}`)

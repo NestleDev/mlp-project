@@ -1,0 +1,8 @@
+header.header
+    .container.container--wide 
+        .header__wrap
+            .header__logo-wrap
+                .header__logo
+                    img.logo(src="./images/logo.png", alt="logo")
+            +menu(data.header.menu)
+            +menu(data.header.links)

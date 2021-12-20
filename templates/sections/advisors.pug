@@ -1,0 +1,9 @@
+include ../components/card-resume.pug
+
+section.advisors
+    .container 
+        h2.title.title_color_grey.advisors__title= data.advisors.title
+        ul.advisors__list
+            each item in data.advisors.items 
+                li.advisors__item
+                    +card-resume(item)

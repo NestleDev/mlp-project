@@ -1,0 +1,23 @@
+@import 'vars';
+@import url($font-url);
+@import './settings/base';
+//sections
+@import './sections/intro';
+@import './sections/overview';
+@import './sections/roadmap';
+@import './sections/team';
+@import './sections/advisors';
+@import './sections/partners';
+@import './sections/footer';
+//components
+@import './components/maincontent';
+@import './components/header';
+@import './components/menu';
+@import './components/title';
+@import './components/button';
+@import './components/card';
+@import './components/socials';
+@import './components/card-info';
+@import './components/card-resume';
+@import './components/form';
+@import './components/copyright';

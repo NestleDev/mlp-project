@@ -1,0 +1,41 @@
+.card-info{
+    height: 100%;
+    padding: 50px 50px 50px 35px;
+    background-color: $white-color;
+    border-radius: 20px;
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        margin-left: 15px;
+    }
+    &__list{
+        margin-left: 21px;
+    }
+    &__item{
+        position: relative;
+        display: flex;
+        font-size: 14px;
+        line-height: 20px;
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+        &:before{
+            content: '';
+            display: flex;
+            min-width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: $base-color;
+            position: absolute;
+            top: 9px;
+            left: -12px;
+        }
+    }
+    &_active{
+        box-shadow: 0px 20px 50px -20px rgba(11, 27, 38, 0.2);
+        .card-info__title{
+            color: $violet-color;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+include ../components/card-info.pug
+
+section.roadmap
+    .container
+        h2.title.title_color_violet.roadmap__title= data.roadmap.title
+        ul.roadmap__list
+            each item in data.roadmap.cards
+                li.roadmap__item
+                    +card-info(item)
+

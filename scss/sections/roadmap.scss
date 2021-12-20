@@ -1,0 +1,55 @@
+.roadmap{
+    padding: 100px 0 100px 0;
+    &__title{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -50px;
+        margin-top: -50px;
+    }
+    &__item{
+        position: relative;
+        margin-left: 50px;
+        margin-top: 50px;
+        flex: 1;
+        max-width: calc(100% / 4 - 50px);
+        // min-width: calc(100% / 4 - 50px);
+        &::before{
+            content: '';
+            display: flex;
+            position: absolute;
+            z-index: 1;
+        }
+        &:nth-child(1)::before{
+            width: 250px;
+            height: 250px;
+            background: url('./images/planet_1.png');
+            top: -150px;
+            left: -150px;
+        }
+        &:nth-child(2)::before{
+            width: 400px;
+            height: 400px;
+            background: url('./images/planet_2.png');
+            bottom: -150px;
+            left: -270px;
+        }
+        &:nth-child(3)::before{
+            width: 200px;
+            height: 200px;
+            background: url('./images/planet_3.png');
+            top: -50px;
+            right: -113px;
+        }
+        &:nth-child(4)::before{
+            width: 300px;
+            height: 300px;
+            background: url('./images/planet_4.png');
+            bottom: -50px;
+            right: -200px;
+        }
+    }
+}

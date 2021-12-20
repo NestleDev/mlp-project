@@ -1,0 +1,6 @@
+mixin card-info(data)
+    div(class=`card-info${data.isActive ? ' card-info_active' : ''}`)
+        h3.card-info__title= data.title
+        ul.card-info__list
+            each item in data.texts
+                li.card-info__item= item

@@ -1,0 +1,19 @@
+.intro{
+    padding: 220px 0 105px 0;
+    &__title{
+        max-width: 375px;
+        margin-bottom: 50px;
+    }
+    &__desc{
+        max-width: 400px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        opacity: 0.5;
+    }
+    &__btns {
+        margin-left: -5px;
+        &> .button:not(:first-child){
+            margin-left: 19px;
+        }
+    }
+}

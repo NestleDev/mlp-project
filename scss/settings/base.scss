@@ -1,0 +1,84 @@
+@import 'normalize';
+@import 'media';
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    font-family: $base-family;
+    font-size: $base-size;
+    line-height: $base-line;
+    font-weight: $base-weight;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $base-color;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    line-height: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: $container-size + $container-padding * 2;
+    width: 95%;
+    padding: 0 $container-padding;
+    &--wide{
+        max-width: $container-wide-size + $container-padding * 2;
+    }
+}
+
+.link{
+    color: $violet-color;
+    line-height: 30px;
+    font-weight: 500;
+    text-decoration: underline;
+}

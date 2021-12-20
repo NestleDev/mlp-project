@@ -1,0 +1,28 @@
+.form{
+    &__title{
+        font-weight: 500;
+        font-size: 24px;
+        color: rgba($white-color, .25);
+        margin-bottom: 30px;
+        margin-left: 15px;
+    }
+    &__form{
+        display: flex;
+    }
+    &__input{
+        background-color: $base-color;
+        border: 1px solid $white-color;
+        border-radius: 10px;
+        padding: 10px 20px 10px 15px;
+        color: $white-color;
+        min-width: 267px;
+    }
+    &__submit{
+        margin-left: 10px;
+    }
+}
+
+::placeholder{
+    color: rgba($white-color, .25);
+    font-weight: 500;
+}

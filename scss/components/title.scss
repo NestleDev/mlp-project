@@ -1,0 +1,19 @@
+.title{
+    font-family: $custom-family;
+    font-size: 80px;
+    line-height: 80px;
+    color: $accent-color;
+    &_color_violet{
+        color: $violet-color;
+    }
+    &_color_grey{
+        color: $color-grey;
+    }
+    &_color_black{
+        color: $base-color;
+    }
+    &_small{
+        font-size: 40px;
+        line-height: inherit;
+    }
+}

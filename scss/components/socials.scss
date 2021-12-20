@@ -1,0 +1,41 @@
+.socials{
+    display: flex;
+    &__item:not(:first-child){
+        margin-left: 30px;
+    }
+    &__link{
+        display: flex;
+        background: url('./images/icons.png');
+        width: 30px; height: 30px;
+    }
+    &__link_icon_youtube{
+        background-position: -10px -10px;
+    }
+    &__link_icon_medium{
+        background-position: -10px -60px;
+    }
+    &__link_icon_twitter{
+        background-position: -10px -110px;
+    }
+    &__link_icon_discord{
+        background-position: -10px -160px;
+    }
+    &__link_icon_telegram{
+        background-position: -10px -210px;
+    }
+    &__link_icon_youtube-white{
+        background-position: -10px -310px;
+    }
+    &__link_icon_medium-white{
+        background-position: -10px -260px;
+    }
+    &__link_icon_twitter-white{
+        background-position: -10px -360px;
+    }
+    &__link_icon_discord-white{
+        background-position: -10px -460px;
+    }
+    &__link_icon_telegram-white{
+        background-position: -10px -410px;
+    }
+}

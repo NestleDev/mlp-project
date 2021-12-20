@@ -1,0 +1,25 @@
+.card{
+    position: relative;
+    display: flex;
+    border-radius: 20px;
+    background-color: $white-color;
+    &__pic{
+        width: 450px;
+        height: 700px;
+    }
+    &__content{
+        flex: 1;
+        padding: 100px 100px 100px 50px;
+    }
+    &__title{
+        margin-bottom: 50px;
+    }
+    &__desc{
+        margin-bottom: 40px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    &__text{
+        margin-bottom: 10px;
+    }
+}

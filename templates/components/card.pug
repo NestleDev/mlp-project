@@ -1,0 +1,10 @@
+mixin card(img, title, desc, socials)
+    .card
+        .card__pic
+            img.card__img(src=`./images/${img}`, alt="hero")
+        .card__content
+            h2.title.title_small.card__title= title
+            .card__desc
+                each text in desc
+                    p.card__text !{text}
+            +socials(socials)

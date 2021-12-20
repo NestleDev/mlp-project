@@ -1,0 +1,12 @@
+mixin menu(items, mod)
+    nav(class=`menu${mod ? ` menu_${mod}` : ''}`)
+        ul.menu__list
+            each item in items
+                li.menu__item 
+                    a.menu__link(href=item.href)= item.text
+
+mixin socials(items)
+    ul.socials
+       each item in items
+         li.socials__item
+            a(class=`socials__link socials__link_icon_${item.icon}` href="#")
