@@ -50,5 +50,5 @@ class ScrollPager{
 }
 
 new ScrollPager({
-    offsetTarget: 170
+    offsetTarget: 50
 })
