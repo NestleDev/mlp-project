@@ -3,6 +3,10 @@
     font-size: 80px;
     line-height: 80px;
     color: $accent-color;
+    @include phones{
+        font-size: 42px;
+        line-height: 42px;
+    }
     &_color_violet{
         color: $violet-color;
     }

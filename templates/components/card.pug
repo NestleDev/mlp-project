@@ -1,5 +1,5 @@
 mixin card(img, title, desc, socials)
-    .card
+    .card&attributes(attributes)
         .card__pic
             img.card__img(src=`./images/${img}`, alt="hero")
         .card__content

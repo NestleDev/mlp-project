@@ -9,14 +9,15 @@
         flex-wrap: wrap;
         margin-left: -50px;
         margin-top: -50px;
+        justify-content: center;
     }
     &__item{
         position: relative;
         margin-left: 50px;
         margin-top: 50px;
         flex: 1;
-        max-width: calc(100% / 4 - 50px);
-        // min-width: calc(100% / 4 - 50px);
+        min-width: 272.5px;
+        max-width: 272.5px;
         &::before{
             content: '';
             display: flex;

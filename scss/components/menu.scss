@@ -8,7 +8,14 @@
     &__link{
         font-size: 14px;
         font-weight: 500;
-        white-space: nowrap; 
+        white-space: nowrap;
+        transition: $transition-time;
+        &_active{
+            color: $violet-color;
+        }
+        &:hover{
+            color: rgba($base-color, .6);
+        }
     }
     &_column{
         .menu__list{

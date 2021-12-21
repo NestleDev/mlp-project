@@ -5,17 +5,28 @@
     color: rgba($base-color, .5);
     border-radius: 10px;
     border: 2px solid transparent;
+    transition: $transition-time;
     &_border_grey{
         border: 2px solid #DADCE5;
+        &:hover{
+            color: $base-color;
+        }
     }
     &_color_violet{
-        background-color: $violet-color;
+        background: $violet-color;
         box-shadow: 0px 10px 10px -5px rgba(222, 2, 127, 0.25), 0px 20px 30px -10px rgba(11, 27, 38, 0.25);
         color: $white-color;
+        &:hover{
+            background: $violet-color-dark;
+        }
+
     }
     &_color_accent{
         background-color: $accent-color;
         box-shadow: 0px 10px 10px -5px rgba(247, 192, 50, 0.25), 0px 20px 30px -10px rgba(11, 27, 38, 0.25);
         color: $white-color;
+        &:hover{
+            background-color: $accent-color-dark;
+        }
     }
 }

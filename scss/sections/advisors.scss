@@ -9,10 +9,13 @@
         flex-wrap: wrap;
         margin-left: -50px;
         margin-top: -50px;
+        justify-content: center;
     }
     &__item{
+        flex: 1;
         margin-left: 50px;
-        max-width: calc(100% / 4 - 50px);
+        min-width: 272.5px;
+        max-width: 272.5px;
         margin-top: 50px;
     }
 }

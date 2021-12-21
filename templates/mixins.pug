@@ -3,7 +3,7 @@ mixin menu(items, mod)
         ul.menu__list
             each item in items
                 li.menu__item 
-                    a.menu__link(href=item.href)= item.text
+                    a.menu__link(href=item.href)&attributes(attributes)= item.text
 
 mixin socials(items)
     ul.socials

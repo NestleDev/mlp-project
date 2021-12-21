@@ -69,7 +69,7 @@ img {
 .container {
     margin: 0 auto;
     max-width: $container-size + $container-padding * 2;
-    width: 95%;
+    width: 100%;
     padding: 0 $container-padding;
     &--wide{
         max-width: $container-wide-size + $container-padding * 2;

@@ -3,6 +3,7 @@ header.header
         .header__wrap
             .header__logo-wrap
                 .header__logo
-                    img.logo(src="./images/logo.png", alt="logo")
-            +menu(data.header.menu)
+                    a(href="#intro" data-nav).logo
+                        img.logo__img(src="./images/logo.png", alt="logo")
+            +menu(data.header.menu)(data-nav)
             +menu(data.header.links)

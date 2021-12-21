@@ -1,5 +1,5 @@
 mixin card-resume(data) 
-    .card-resume 
+    a(href=data.link, target="_blank").card-resume 
         .card-resume__photo 
             img.card-resume__img(src=`./images/${data.photo}`, alt="photo")
         .card-resume__desc 
