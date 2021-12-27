@@ -1,22 +1,59 @@
 .team{
     padding: 170px 0 50px 0;
+    @include phones{
+        padding: 40px 0 20px 0;
+    }
     &__title{
         text-align: center;
         margin-bottom: 50px;
+        @include phones{
+            margin-bottom: 10px;
+        }
+    }
+    &__desc{
+        font-weight: 500;
+        line-height: 30px;
+        opacity: .5;
+        text-align: center;
+        margin-bottom: 50px;
+        @include phones{
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 40px;
+        }
     }
     &__list{
         display: flex;
         flex-wrap: wrap;
-        margin-left: -50px;
-        margin-top: -50px;
         justify-content: center;
+        margin-left: -45px;
+        margin-top: -50px;
+        &:not(:last-child){
+            margin-bottom: 100px;
+            @include phones{
+                margin-bottom: 40px;
+            }
+        }
+        @include tablets{
+            margin-left: -25px;
+        }
+        &_second{
+            @include tablets{
+                display: none;
+            }
+        }
     }
     &__item{
-        width: 100%;
-        margin-left: 50px;
-        flex: 1;
-        min-width: 272.5px;
-        max-width: 272.5px;
+        margin-left: 45px;
         margin-top: 50px;
+        &_mobile{
+            display: none;
+            @include tablets{
+                display: flex;
+            }
+        }
+        @include tablets{
+            margin-left: 25px;
+        }
     }
 }

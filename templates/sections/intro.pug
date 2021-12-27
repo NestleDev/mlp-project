@@ -1,7 +1,11 @@
 section.intro(data-to="intro")
-    .container
-        h1.title.intro__title= data.intro.title 
-        p.intro__desc= data.intro.desc
-        .intro__btns
-            a.button.button_color_violet(href="#")= data.intro.learn
-            a.button.button_border_grey(href="#")= data.intro.whitepaper
+    .container.intro__container
+        .intro__content
+            h1.title.intro__title= data.intro.title 
+            p.intro__desc= data.intro.desc
+            .intro__btns
+                a.button.button_color_violet(href="#")= data.intro.learn
+                a.button.button_border_grey(href="#")= data.intro.whitepaper
+        .intro__pic
+            img.intro__img(src="./images/planet.png", alt="")
+        

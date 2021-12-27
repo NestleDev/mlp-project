@@ -1,10 +1,12 @@
-mixin card-resume(data) 
-    a(href=data.link, target="_blank").card-resume 
-        .card-resume__photo 
+mixin card-resume(data, style=[])
+    - var classNameBuild = style.reduce ? style.reduce((p, c) => [...p, `${'card-resume'}_${c}`], ['card-resume']).join(' ') : 'card-resume'
+
+    a(class=`${classNameBuild}${data.accent ? ` card-resume_accent_${data.accent}` : ''}`, href=data.link, target="_blank")
+        .card-resume__photo
             img.card-resume__img(src=`./images/${data.photo}`, alt="photo")
         .card-resume__desc 
             h3.card-resume__name= data.name
             .card-resume__occ= data.occ
             if data.desc
-                .card-resume__text= data.desc
+                .card-resume__text !{data.desc}
 

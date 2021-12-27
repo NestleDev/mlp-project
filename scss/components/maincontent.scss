@@ -1,6 +1,10 @@
 .maincontent{
     background: url('./images/bg.png') top right, $color-grey-light;
     background-repeat: no-repeat;
+    @include phones{
+        background-image: url('./images/bg_mob.png');
+        background-size: contain;
+    }
     &__gradient{
         background: linear-gradient(180deg, #FFFFFF 77.27%, rgba(255, 255, 255, 0) 100%);
     }

@@ -1,19 +1,75 @@
 .intro{
-    padding: 100px 0 105px 0;
+    padding: 180px 0 194px 0;
+    @include laptops{
+        padding: 22px 0 130px 0;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        @include laptops{
+            flex-direction: column;
+        }
+    }
+    &__content{
+        position: relative;
+        flex: 1;
+        z-index: 1;
+        @include laptops{
+            order: 2;
+        }
+    }
     &__title{
-        max-width: 375px;
+        max-width: 600px;
         margin-bottom: 50px;
+        font-size: 72px;
+        @include phones{
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 20px;
+        }
     }
     &__desc{
         max-width: 400px;
         font-weight: 500;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
         opacity: 0.5;
+        @include phones{
+            margin-bottom: 20px;
+        }
     }
     &__btns {
         margin-left: -5px;
         &> .button:not(:first-child){
             margin-left: 19px;
+            @include phones{
+                margin-left: 10px;
+            }
+        }
+    }
+    &__pic{
+        position: relative;
+        @include laptops{
+            order: 1;
+            margin-bottom: 46px;
+        }
+    }
+    &__img{
+        max-width: initial;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-89%, -55%);
+        @include laptops{
+            position: static;
+            transform: none;
+            max-width: 100%;
+        }
+        @include tablets{
+            max-width: 55%;
+            margin: 0 auto;
+        }
+        @include phones{
+            max-width: 100%;
         }
     }
 }

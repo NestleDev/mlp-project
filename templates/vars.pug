@@ -70,49 +70,98 @@
         ],
         roadmap: {
             title: 'Roadmap',
+            year_1: '2021',
+            year_2: '2022',
             cards: [
                 {
-                    title: 'Q3 2021',
+                    title: 'Q4',
                     texts: [
-                        'Donec quis diam sit amet leo porttitor dictum',
-                        'Ut semper nec mauris nec facilisis',
-                        'Duis lorem magna, pulvinar id finibus eget, vehicula id leo'
-                    ]
+                        {
+                           title: 'Conceptualization',
+                           desc: 'Concept & Research Starting writing GDD + Art'
+                        },
+                        {
+                            title: 'Development ',
+                            desc: 'Smart Contract Development'
+                        },
+                        {
+                            title: 'Business',
+                            desc: 'Website Launch Whitepaper Release Strategic Partnerships'
+                        },
+                        {
+                            title: 'Community',
+                            desc: 'Social Media Launch Gameplay Trailer'
+                        }
+                    ],
+                    isCompleted: true,
+                    icon: 'planet_1'
                 },
                 {
-                    title: 'Q4 2021',
-                    isActive: true,
+                    title: 'Q1',
                     texts: [
-                        'Aenean mollis dui massa',
-                        'Molestie orci dapibus sit amet',
-                        'Praesent sodales viverra libero, vitae dignissim dolor feugiat ut',
-                        'Fusce ultricies libero',
-                        'Sollicitudin tincidunt id quis nisl'
-                    ]
+                        {
+                           title: 'Development',
+                           desc: 'Audit Contract'
+                        },
+                        {
+                            title: 'Business',
+                            desc: 'Seed & Private rounds KYC procedures of the team members'
+                        },
+                        {
+                            title: 'Community',
+                            desc: 'Community Building + Influencer Marketing Airdrop'
+                        },
+                        {
+                            title: 'Public Sale',
+                            desc: 'IDO Launch NFT Marketplace Launch'
+                        }
+                    ],
+                    icon: 'planet_2'
                 },
                 {
-                    title: 'Q1 2022',
+                    title: 'Q2',
                     texts: [
-                        'Integer facilisis quis mauris quis scelerisque',
-                        'Proin at mollis odio',
-                        'Quisque ultrices hendrerit augue ut dapibus',
-                        'Curabitur vitae ante mauris',
-                        'Nulla pretium ante magna, et congue mauris varius id',
-                        'Suspendisse nec mattis lectus',
-                        'Etiam id vestibulum'
-                    ]
+                        {
+                           title: 'Game Release',
+                           desc: 'Alpha game release (PvE) (Web, Android/iOS App) Staking'
+                        },
+                        {
+                            title: 'Development',
+                            desc: ' PvP Mode Development Dual Chain Development (BSC, SOL)'
+                        },
+                        {
+                            title: 'Business',
+                            desc: 'New Strategic Partnerships'
+                        },
+                        {
+                            title: 'Marketing & Community',
+                            desc: 'Paid User Acquisition Community Events AMA Sessions'
+                        },
+                        {
+                            title: 'Listing',
+                            desc: 'CEX<br>Listing'
+                        }
+                    ],
+                    icon: 'planet_3'
                 },
                 {
-                    title: 'Q2 2022',
+                    title: 'Q3',
                     texts: [
-                        'In facilisis luctus facilisis',
-                        'Duis et accumsan nisi',
-                        'Porttitor hendrerit mi',
-                        'Suspendisse vitae turpis erat',
-                        'Curabitur dapibus dui a metus eleifend, et facilisis orci consequat',
-                        'Class aptent taciti sociosqu litora'
-                    ]
-                }
+                        {
+                           title: 'Game Release',
+                           desc: 'Public game release (Web, Android, iOS) PvP Mode Public Testing'
+                        },
+                        {
+                            title: 'Development',
+                            desc: 'Improving gameplay and bug fixes'
+                        },
+                        {
+                            title: 'Conceptualization',
+                            desc: 'Concept and Research for new hybrid casual in metaverse'
+                        }
+                    ],
+                    icon: 'planet_4'
+                },
             ]
         },
         tokenomics: {
@@ -120,38 +169,46 @@
         },
         team: {
             title: 'Team',
+            desc: 'The majority of the My Little Planet team came from Dorfer Games, a game development studio with more than 50 employees that has developed more than 100 hyper-casual games and cooperates with top market partners. The team has a project with 2 million installs, another one was released and is starting the process of scaling, and a third one is currently in soft launch. Our company has brought together a professional team of top performers to create My Little Planet.',
             items: [
                 {
                    photo: 'team/nechaev.jpg',
                    name: 'Aleksandr Nechaev',
                    occ: 'CEO',
-                   link: '#'
+                   link: '#',
+                   accent: 'violet'
                 },
                 {
                     photo: 'team/ivanov.jpg',
                     name: 'Semyon Ivanov',
                     occ: 'COO',
-                    link: 'http://www.linkedin.com/in/semyon-ivanov'
+                    link: 'http://www.linkedin.com/in/semyon-ivanov',
+                    accent: 'orange'
                 },
                 {
                     photo: 'team/rodionov.jpg',
                     name: 'Alexey Rodionov',
                     occ: 'Lead Unity Developer',
-                    link: '#'
+                    link: '#',
+                    accent: 'blue'
                 },
                 {
                     photo: 'team/gorelov.jpg',
                     name: 'Artem Gorelov',
                     occ: 'Lead Game Designer',
-                    link: '#'
+                    link: '#',
+                    accent: 'green'
                 },
                 {
                     photo: 'team/perova.jpg',
                     name: 'Alena Perova',
                     occ: 'Lead Artist',
-                    link: 'https://www.linkedin.com/in/alena-perova-dofer/'
-                },
-                {
+                    link: 'https://www.linkedin.com/in/alena-perova-dofer/',
+                    accent: 'turquoise'
+                }
+            ],
+            items_2: [
+                 {
                     photo: 'team/yurevich.jpg',
                     name: 'Anna Yurevich',
                     occ: 'HR',
@@ -223,35 +280,24 @@
             title: 'Advisors',
             items: [
                 {
-                   photo: 'avatar.png',
-                   name: 'Lorem Ipsum',
-                   occ: 'Founder',
-                   desc: 'Mauris eu accumsan sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae'
+                   photo: 'advisors/vasilev.jpg',
+                   name: 'Sergey Vasilev',
+                   occ: 'Investment & Strategy Advisor',
+                   desc: 'Ex. Co-Founder at Starta Ventures <br>Launched a successful ICO',
+                   accent: 'violet'
                 },
                 {
-                    photo: 'avatar.png',
-                    name: 'Lorem Ipsum',
-                    occ: 'Founder',
-                    desc: 'Mauris eu accumsan sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae'
-                },
-                {
-                    photo: 'avatar.png',
-                    name: 'Lorem Ipsum',
-                    occ: 'Founder',
-                    desc: 'Mauris eu accumsan sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae'
-                },
-                {
-                    photo: 'avatar.png',
-                    name: 'Lorem Ipsum',
-                    occ: 'Founder',
-                    desc: 'Mauris eu accumsan sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae'
+                    photo: 'advisors/artemiuk.jpg',
+                    name: 'Artem Artemiuk',
+                    occ: 'Marketing Advisor',
+                    desc: 'ex. Head of Performance Advertising<br> Wargaming<br> Co-Founder at Giveaway (YC W20)<br> Advisor at Paysenger (NFT messenger)',
+                    accent: 'orange'
                 }
             ]
         },
         partners: {
             title: 'Partners',
-            desc: 'Praesent ultrices eros vestibulum, ornare nibh ac, pretium sem. Vestibulum nunc arcu, scelerisque non viverra eget, dictum quis risus. Suspendisse potenti. Nam vestibulum laoreet est.',
-            items: [1, 1, 1, 1, 1, 2, 2, 2, 2, 1, 1, 1, 1, 1]
+            items: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
         },
         footer: {
             slogan: 'My Little Planet',
@@ -310,7 +356,7 @@
                 }
             ]
         },
-        copyright: '&copy; 2020-2021 My Little Planet Limited. All rights reserved',
+        copyright: '&copy; 2020-2021 My Little Planet Limited. <span>All rights reserved</span>',
         policy: 'Be sure to taka a look at our<br> <a class="link" href="#">Terms of Use</a> and <a class="link" href="#">Privacy Policy</a>',
         email: 'support@mlttlplnt.io'
     }

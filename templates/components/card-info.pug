@@ -1,6 +1,8 @@
 mixin card-info(data)
-    div(class=`card-info${data.isActive ? ' card-info_active' : ''}`)
+    div(class=`card-info${data.isCompleted ? ' card-info_active' : ''}${data.icon ? ` card-info_${data.icon}` : ''}`)
         h3.card-info__title= data.title
         ul.card-info__list
             each item in data.texts
-                li.card-info__item= item
+                li.card-info__item
+                    .card-info__item-title= item.title
+                    span.card-info__item-desc !{item.desc}

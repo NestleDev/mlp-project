@@ -1,28 +1,29 @@
-.header{
-   // width: 100%;
-    // position: fixed;
-    // top: 0;
-    // left: 0; 
-    padding-top: 40px;
+.header{ 
+    position: relative;
     z-index: 999;
-    &__wrap{
+    background: $white-color;
+    box-shadow: 0px 20px 30px -20px rgba(11, 27, 38, 0.05);
+    padding: 20px 0;
+    @include laptops{
+        background: transparent;
+        padding: 40px 0 0 0;
+        box-shadow: none;
+    }
+    &__container{
         display: flex;
         justify-content: space-between;
-        padding: 20px 40px 20px 25px;
-        box-shadow: 0px 20px 30px -20px rgba(11, 27, 38, 0.05);
-        border-radius: 10px;
-        background: $white-color;
-    }
-    &__logo-wrap{
-        position: relative;
-        width: 152px;
+        align-items: center;
+        @include laptops{
+            justify-content: center;
+        }
     }
     &__logo{
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(-35%);
-        width: 152px;
-        height: 120px;
+        width: 88px;
+        height: 80px;
+    }
+    &__menu{
+        @include laptops{
+            display: none;
+        }
     }
 }

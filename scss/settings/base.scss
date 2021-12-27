@@ -14,6 +14,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $base-color;
+    @include phones{
+        line-height: 20px;
+    }
 }
 
 button {
@@ -81,4 +84,37 @@ img {
     line-height: 30px;
     font-weight: 500;
     text-decoration: underline;
+}
+
+.owl-stage{
+    display: flex;
+}
+
+.owl-item{
+    padding-bottom: 50px;
+}
+
+.owl-carousel{
+    @include tablets{
+        width: calc(100% + 40px);
+    }
+}
+
+.owl-dots{
+    display: flex !important;
+    justify-content: center;
+    margin-left: -40px;
+}
+
+body .owl-dots .owl-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba($base-color, .1);
+    transition: $transition-time;
+    margin-left: 10px;
+    &.active{
+        background: $base-color;
+    }
+
 }

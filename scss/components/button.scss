@@ -1,11 +1,16 @@
 .button{
     display: inline-flex;
+    justify-content: center;
     padding: 8px 29px;
     font-weight: 700;
     color: rgba($base-color, .5);
     border-radius: 10px;
     border: 2px solid transparent;
     transition: $transition-time;
+    line-height: 40px;
+    @include phones{
+        font-size: 14px;
+    }
     &_border_grey{
         border: 2px solid #DADCE5;
         &:hover{

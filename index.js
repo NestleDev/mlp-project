@@ -52,3 +52,15 @@ class ScrollPager{
 new ScrollPager({
     offsetTarget: 50
 })
+
+$(document).ready(function(){
+    if (window.innerWidth <= 768) {
+        document.querySelector('[data-slide]').classList.add('owl-carousel')
+        $(".owl-carousel").owlCarousel({
+            autoWidth:true,
+            items: 3,
+            margin: 20,
+            dots: true
+        });
+    }
+});

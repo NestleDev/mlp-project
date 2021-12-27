@@ -3,8 +3,17 @@ include ../components/card-info.pug
 section.roadmap
     .container
         h2.title.title_color_violet.roadmap__title(data-to="roadmap")= data.roadmap.title
-        ul.roadmap__list
-            each item in data.roadmap.cards
-                li.roadmap__item
-                    +card-info(item)
+        .roadmap__content
+            .roadmap__quarter
+                h3.roadmap__year.roadmap__year_completed
+                    span= data.roadmap.year_1
+                .roadmap__item
+                    +card-info(data.roadmap.cards[0])
+            .roadmap__quarter
+                h3.roadmap__year
+                    span= data.roadmap.year_2
+                ul.roadmap__list(data-slide)
+                    each item in data.roadmap.cards.slice(1)
+                        li.roadmap__item
+                            +card-info(item)
 

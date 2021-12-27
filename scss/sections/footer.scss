@@ -1,40 +1,62 @@
 .footer{
     background-color: $base-color;
     padding: 100px 0 50px 0;
+    @include phones{
+        padding: 20px 0 40px 0;
+    }
     &__row{
         display: flex;
+        justify-content: space-between;
         &:not(:last-child){
             margin-bottom: 50px;
+            @include laptops{
+                margin-bottom: 80px;
+            }
+        }
+        @include laptops{
+            flex-direction: column;
+            align-items: center;
         }
     }
     &__cell{
-        &:nth-child(2){
-            margin-left: 115px;
-        }
-        &:nth-child(3){
-            margin-left: 140px;
-        }
-        &:nth-child(4){
-            margin-left: 95px;
+        padding: 0 20px;
+        @include laptops{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
         }
     }
-    &__slogan{
-        color: $white-color;
-        font-family: $custom-family;
-        font-size: 32px;
-        margin-bottom: 40px;
-        white-space: nowrap;
+    &__logo{
+        width: 88px;
+        filter: grayscale(1);
+        margin-bottom: 10px;
+        @include phones{
+            margin-bottom: 20px;
+        }
+    }
+    &__menu{
+        @include laptops{
+            display: none;
+        }
     }
     &__form{
         margin-bottom: 40px;
     }
     &__socials{
         margin-left: 15px;
+        @include laptops{
+            margin-left: 0;
+        }
     }
     &__copyright{
         text-align: center;
     }
     &__policy{
         color: rgba($white-color, .25);
+        @include laptops{
+            text-align: center;
+            margin-bottom: 60px;
+        }
     }
 }

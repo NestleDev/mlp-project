@@ -1,4 +1,16 @@
 .chart{
     display: flex;
     justify-content: center;
+    &__img{
+        display: flex;
+        @include phones{
+            display: none;
+        }
+        &_mob{
+            display: none;
+            @include phones{
+                display: flex;
+            }
+        }
+    }
 }

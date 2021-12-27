@@ -1,41 +1,87 @@
 .card-info{
     height: 100%;
-    padding: 50px 50px 50px 35px;
+    padding: 25px 0 50px 0;
     background-color: $white-color;
     border-radius: 20px;
+    box-shadow: 0px 20px 50px -20px rgba(11, 27, 38, 0.2);
+    &::before{
+        content: '';
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        background-size: contain;
+        @include tablets {
+            display: none;
+        }
+    }
+    &_planet_1::before{
+        width: 150px;
+        height: 150px;
+        background-image: url('./images/planet_1.png');
+        top: -101px;
+        left: -70px;
+    }
+    &_planet_2::before{
+        width: 200px;
+        height: 200px;
+        background-image: url('./images/planet_2.png');
+        bottom: -117px;
+        left: -100px;
+    }
+    &_planet_3::before{
+        width: 150px;
+        height: 150px;
+        background-image: url('./images/planet_3.png');
+        top: -50px;
+        right: -74px;
+    }
+    &_planet_4::before{
+        width: 100px;
+        height: 100px;
+        background-image: url('./images/planet_4.png');
+        bottom: -45px;
+        right: -40px;
+    }
     &__title{
+        text-align: center;
         font-size: 24px;
         font-weight: 700;
-        margin-bottom: 20px;
-        margin-left: 15px;
+        margin-bottom: 30px;
+        color: $violet-color;
     }
     &__list{
-        margin-left: 21px;
+        padding: 0 25px 0 50px;
     }
     &__item{
         position: relative;
         display: flex;
+        flex-direction: column;
         font-size: 14px;
         line-height: 20px;
+        &-title{
+            font-weight: 700;
+        }
         &:not(:last-child){
             margin-bottom: 10px;
         }
-        &:before{
-            content: '';
-            display: flex;
-            min-width: 3px;
-            height: 3px;
-            border-radius: 50%;
-            background-color: $base-color;
-            position: absolute;
-            top: 9px;
-            left: -12px;
-        }
     }
     &_active{
-        box-shadow: 0px 20px 50px -20px rgba(11, 27, 38, 0.2);
+        box-shadow: none;
+        border: 1px solid $color-grey;
         .card-info__title{
-            color: $violet-color;
+            color: $color-grey;
+        }
+        .card-info__item{
+            &:before{
+                content: '';
+                display: flex;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 0;
+                right: calc(100% + 5px);
+                background: url('./images/check.png') center no-repeat;
+            }
         }
     }
 }

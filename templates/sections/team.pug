@@ -3,7 +3,13 @@ include ../components/card-resume.pug
 section.team
     .container 
         h2.title.title_color_black.team__title(data-to="team")= data.team.title
+        .team__desc= data.team.desc
         ul.team__list
-            each item in data.team.items 
+            -var list = [...data.team.items, ...data.team.items_2 ]
+            each item in list
+                li(class=`team__item${!item.accent ? ` team__item_mobile` : ''}`)
+                    +card-resume(item, ['custom'])
+        ul.team__list.team__list_second
+            each item in data.team.items_2 
                 li.team__item
-                    +card-resume(item)
+                    +card-resume(item, ['small'])

@@ -1,15 +1,6 @@
 @import 'vars';
 @import url($font-url);
 @import './settings/base';
-//sections
-@import './sections/intro';
-@import './sections/overview';
-@import './sections/roadmap';
-@import './sections/tokenomics';
-@import './sections/team';
-@import './sections/advisors';
-@import './sections/partners';
-@import './sections/footer';
 //components
 @import './components/maincontent';
 @import './components/header';
@@ -23,3 +14,12 @@
 @import './components/card-resume';
 @import './components/form';
 @import './components/copyright';
+//sections
+@import './sections/intro';
+@import './sections/overview';
+@import './sections/roadmap';
+@import './sections/tokenomics';
+@import './sections/team';
+@import './sections/advisors';
+@import './sections/partners';
+@import './sections/footer';

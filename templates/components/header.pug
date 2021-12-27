@@ -1,9 +1,9 @@
 header.header
-    .container.container--wide 
-        .header__wrap
-            .header__logo-wrap
-                .header__logo
-                    a(href="#intro" data-nav).logo
-                        img.logo__img(src="./images/logo.png", alt="logo")
+    .container.header__container
+        .header__logo
+            a(href="#intro" data-nav).logo
+                img.logo__img(src="./images/logo.png", alt="logo")
+        .header__menu 
             +menu(data.header.menu)(data-nav)
+        .header__menu 
             +menu(data.header.links)
