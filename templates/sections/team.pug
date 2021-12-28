@@ -1,8 +1,8 @@
 include ../components/card-resume.pug
 
-section.team
+section.team(id="team")
     .container 
-        h2.title.title_color_black.team__title(data-to="team")= data.team.title
+        h2.title.title_color_black.team__title= data.team.title
         .team__desc= data.team.desc
         ul.team__list
             -var list = [...data.team.items, ...data.team.items_2 ]

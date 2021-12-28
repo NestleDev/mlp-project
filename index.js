@@ -49,9 +49,9 @@ class ScrollPager{
     }
 }
 
-new ScrollPager({
-    offsetTarget: 50
-})
+// new ScrollPager({
+//     offsetTarget: 50
+// })
 
 $(document).ready(function(){
     if (window.innerWidth <= 768) {
