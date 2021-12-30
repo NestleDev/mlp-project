@@ -1300,7 +1300,7 @@ body .owl-dots .owl-dot.active {
     height: 150px;
     background-image: url("./images/planet_2.png");
     top: -68px;
-    left: 237px;
+    right: -92px;
   }
   .roadmap [data-icon=planet_2]::after {
     width: 150px;
