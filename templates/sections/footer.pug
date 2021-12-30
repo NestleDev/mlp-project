@@ -2,14 +2,15 @@ footer.footer
     .container
         .footer__row
             .footer__cell
-                img.footer__logo(src="./images/logo.png")
+                a(href="#intro" data-nav).logo
+                    img.logo__img.footer__logo(src="./images/logo.png", alt="logo")
                 .footer__policy !{data.policy}
             .footer__cell
                 .footer__menu
-                    +menu(data.footer.menu_1, 'column')
+                    +menu(data.footer.menu_1, 'column')(data-nav)
             .footer__cell
                 .footer__menu
-                    +menu(data.footer.menu_2, 'column')
+                    +menu(data.footer.menu_2, 'column')(data-nav)
             .footer__cell
                 .footer__form
                     include ../components/form.pug
