@@ -672,23 +672,61 @@ body .owl-dots .owl-dot.active {
 }
 
 .chart {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  width: 100%;
 }
-.chart__img {
-  display: flex;
+.chart svg {
+  width: 100%;
+  height: 100%;
 }
-@media screen and (max-width: 480px) {
-  .chart__img {
+.chart svg g {
+  cursor: pointer;
+}
+.chart svg g > path:first-child {
+  stroke: #DADCE5;
+}
+@media screen and (max-width: 1150px) {
+  .chart svg g > path:first-child {
     display: none;
   }
 }
-.chart__img_mob {
-  display: none;
+.chart svg g:nth-child(1):hover path:first-child {
+  stroke: #87DE51;
+}
+.chart svg g:nth-child(2):hover path:first-child {
+  stroke: #F7329C;
+}
+.chart svg g:nth-child(3):hover path:first-child {
+  stroke: #3246F7;
+}
+.chart svg g:nth-child(4):hover path:first-child {
+  stroke: #40DDFF;
+}
+.chart svg g:nth-child(5):hover path:first-child {
+  stroke: #FF8181;
+}
+.chart svg g:nth-child(6):hover path:first-child {
+  stroke: #33A9E6;
+}
+.chart svg g:nth-child(7):hover path:first-child {
+  stroke: #B54ADB;
+}
+.chart svg g:nth-child(8):hover path:first-child {
+  stroke: #F7C032;
+}
+.chart__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Bowlby One SC", cursive;
+  font-size: 50px;
+  line-height: 80px;
 }
 @media screen and (max-width: 480px) {
-  .chart__img_mob {
-    display: flex;
+  .chart__title {
+    font-size: 32px;
+    line-height: 45px;
   }
 }
 
@@ -1319,14 +1357,166 @@ body .owl-dots .owl-dot.active {
     padding: 40px 0;
   }
 }
-@media screen and (max-width: 480px) {
-  .tokenomics__container {
-    padding: 0 10px;
-  }
+.tokenomics__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .tokenomics__title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 46px;
+}
+@media screen and (max-width: 480px) {
+  .tokenomics__title {
+    margin-bottom: 40px;
+  }
+}
+.tokenomics__wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 1150px) {
+  .tokenomics__wrap {
+    flex-direction: column;
+  }
+}
+.tokenomics__chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 546px;
+  padding: 0 10px;
+  box-sizing: content-box;
+}
+@media screen and (max-width: 1150px) {
+  .tokenomics__chart {
+    order: 0;
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 546px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tokenomics__chart {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+.tokenomics__categories {
+  display: flex;
+  flex-direction: column;
+  margin-top: -42px;
+}
+@media screen and (max-width: 1150px) {
+  .tokenomics__categories {
+    margin-top: 0;
+    order: 2;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tokenomics__categories {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .tokenomics__categories_reverse {
+    order: 1;
+    flex-direction: column;
+  }
+}
+.tokenomics__category {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  position: relative;
+}
+.tokenomics__category-name {
+  font-weight: 700;
+}
+.tokenomics__category_reverce {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 1150px) {
+  .tokenomics__category_reverce {
+    flex-direction: row;
+  }
+}
+.tokenomics__category_reverce .tokenomics__percent {
+  margin-left: 20px;
+  margin-right: 0;
+}
+@media screen and (max-width: 1150px) {
+  .tokenomics__category_reverce .tokenomics__percent {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tokenomics__category {
+    font-size: 16px;
+    line-height: 40px;
+    margin-bottom: 0;
+  }
+}
+.tokenomics__percent {
+  font-family: "Bowlby One SC", cursive;
+  margin-right: 20px;
+  font-size: 25px;
+}
+@media screen and (max-width: 480px) {
+  .tokenomics__percent {
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+.tokenomics__total {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-top: -65px;
+}
+@media screen and (max-width: 480px) {
+  .tokenomics__total {
+    padding: 20px;
+    margin-top: -23px;
+    width: 100%;
+  }
+}
+.tokenomics__supply {
+  font-family: "Bowlby One SC", cursive;
+  font-size: 25px;
+  line-height: 30px;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  color: #F7C032;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .tokenomics__supply {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 0;
+    min-width: 255px;
+  }
+}
+.tokenomics__supply-desc {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+@media screen and (max-width: 480px) {
+  .tokenomics__supply-desc {
+    font-size: 12px;
+  }
 }
 
 .team {

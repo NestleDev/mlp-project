@@ -1,6 +1,70 @@
 section.tokenomics(id="tokenomics")
     .container.tokenomics__container
         h2.title.tokenomics__title= data.tokenomics.title
-        .chart 
-            img.chart__img(src="./images/chart.jpg", alt="chart")
-            img.chart__img.chart__img_mob(src="./images/chart_mob.jpg", alt="chart")
+        .tokenomics__wrap
+            .tokenomics__categories
+                    .tokenomics__category.tokenomics__category_line_1.tokenomics__category_reverce
+                        .tokenomics__percent(style="color: #87DE51;") 13%
+                        .tokenomics__category-name Marketing
+                    .tokenomics__category.tokenomics__category_reverce
+                        .tokenomics__percent(style="color: #F7329C;") 9%
+                        .tokenomics__category-name Foundation reserve
+                    .tokenomics__category.tokenomics__category_reverce
+                        .tokenomics__percent(style="color: #3246F7;") 20%
+                        .tokenomics__category-name Seed Round
+            .tokenomics__chart
+                .chart
+                    <svg viewBox="0 0 546 456" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g>
+                            <path d="M3 168H4.88606C9.61493 168 13.6974 164.688 14.6716 160.06L31.3284 80.9399C32.3026 76.3125 36.3851 73 41.1139 73H133" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M73.2781 163.106C65.3993 160.546 61.0406 152.06 64.1197 144.369C79.8418 105.1 106.363 70.9535 140.748 45.9711C175.134 20.9887 215.804 6.31724 258.01 3.49971C266.276 2.94791 273 9.71573 273 18L273 100.5C273 108.784 266.255 115.397 258.044 116.498C239.63 118.968 222.031 125.974 206.874 136.986C191.718 147.997 179.617 162.57 171.577 179.32C167.993 186.789 159.619 191.16 151.74 188.6L73.2781 163.106Z" fill="#87DE51" stroke="#F2F2F2" stroke-width="5"/>
+                        </g>
+                        <g>
+                            <path d="M3 228H88" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M69.5975 280.225C61.5735 282.285 53.3463 277.456 51.8251 269.312C45.8509 237.329 46.8849 204.426 54.8556 172.881C56.8851 164.85 65.3993 160.546 73.2781 163.106L151.74 188.6C159.619 191.16 163.824 199.619 162.334 207.768C160.315 218.811 159.961 230.095 161.282 241.243C162.257 249.47 157.53 257.648 149.506 259.708L69.5975 280.225Z" fill="#F7329C" stroke="#F2F2F2" stroke-width="5"/>
+                        </g>
+                        <g>
+                            <path d="M3 288H5.99573C10.2008 288 13.9566 290.631 15.3937 294.583L30.6063 336.417C32.0434 340.369 35.7992 343 40.0043 343H133" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M171.832 412.024C167.841 419.284 158.689 421.976 151.711 417.51C130.102 403.68 110.985 386.235 95.2151 365.904C79.4452 345.574 67.3022 322.719 59.2806 298.349C56.6904 290.48 61.5735 282.285 69.5976 280.225L149.506 259.708C157.53 257.648 165.612 262.536 168.721 270.215C172.589 279.77 177.761 288.77 184.108 296.952C190.454 305.134 197.885 312.382 206.178 318.505C212.843 323.425 215.567 332.47 211.576 339.729L171.832 412.024Z" fill="#3246F7" stroke="#F2F2F2" stroke-width="5"/>
+                        </g>
+                        <g>
+                            <path d="M543 348H383" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M483 228C491.284 228 498.052 234.723 497.5 242.989C495.238 276.87 485.33 309.87 468.442 339.478C449.071 373.438 421.186 401.765 387.534 421.667C353.882 441.569 315.626 452.358 276.534 452.972C242.452 453.508 208.761 446.292 177.981 431.952C170.472 428.454 167.841 419.284 171.832 412.024L211.576 339.729C215.567 332.47 224.664 329.924 232.39 332.915C245.853 338.126 260.239 340.714 274.767 340.486C294.313 340.179 313.441 334.784 330.267 324.833C347.093 314.883 361.036 300.719 370.721 283.739C377.92 271.118 382.582 257.264 384.501 242.956C385.603 234.745 392.216 228 400.5 228L483 228Z" fill="#40DDFF" stroke="#F2F2F2" stroke-width="5"/>
+                        </g>
+                        <g>
+                            <path d="M543 288H540.208C535.903 288 532.082 285.246 530.721 281.162L505.279 204.838C503.918 200.754 500.097 198 495.792 198H443" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M472.722 163.106C480.601 160.546 489.115 164.849 491.144 172.881C494.469 186.039 496.596 199.47 497.5 213.011C498.052 221.277 491.284 228 483 228L400.5 228C392.216 228 385.603 221.255 384.501 213.044C384.265 211.279 383.986 209.52 383.666 207.768C382.176 199.619 386.381 191.16 394.26 188.6L472.722 163.106Z" fill="#FF8181" stroke="#F2F2F2" stroke-width="5"/>
+                        </g>
+                        <g>
+                            <path d="M543 228H540.352C535.978 228 532.112 225.158 530.807 220.983L510.193 155.017C508.888 150.843 505.022 148 500.648 148H383" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M457.024 126.832C464.284 122.841 473.453 125.472 476.952 132.981C478.699 136.731 480.343 140.529 481.881 144.37C484.96 152.061 480.601 160.546 472.722 163.106L390.078 189.959C384.509 191.769 378.573 188.695 376.247 183.321V183.321C373.922 177.947 375.744 171.516 380.876 168.695L457.024 126.832Z" fill="#33A9E6" stroke="#F2F2F2" stroke-width="5"/>
+                        </g>
+                        <g>
+                            <path d="M543 168H540.386C535.996 168 532.119 165.137 530.828 160.941L515.172 110.059C513.881 105.863 510.004 103 505.614 103H383" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M416.755 74.9166C422.426 68.8777 431.96 68.5465 437.608 74.6071C446.86 84.5356 455.194 95.2809 462.51 106.711C466.976 113.689 464.284 122.841 457.024 126.832L384.729 166.576C377.47 170.567 368.425 167.843 363.505 161.178C362.447 159.745 361.355 158.338 360.23 156.957C354.999 150.533 354.609 141.095 360.28 135.057L416.755 74.9166Z" fill="#B54ADB" stroke="#F2F2F2" stroke-width="5"/>
+                        </g>
+                        <g>
+                            <path d="M543 108H540.386C535.996 108 532.119 105.137 530.828 100.941L515.172 50.0591C513.881 45.8632 510.004 43 505.614 43H383" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M273 18C273 9.71573 279.724 2.94789 287.99 3.49954C334.805 6.62386 379.489 24.3154 415.754 54.0847C422.157 59.341 422.426 68.8775 416.755 74.9165L360.28 135.056C354.609 141.095 345.165 141.298 338.425 136.48C323.488 125.802 306.155 118.939 287.956 116.498C279.746 115.397 273 108.784 273 100.5L273 18Z" fill="#F7C032" stroke="#F2F2F2" stroke-width="5"/>
+                        </g>
+                    </svg>
+                    .chart__title= data.tokenomics.chart.title
+                .tokenomics__total
+                    .tokenomics__supply= data.tokenomics.supply
+                    .tokenomics__supply-desc= data.tokenomics.supply_desc
+            .tokenomics__categories.tokenomics__categories_reverse
+                    .tokenomics__category
+                        .tokenomics__percent(style="color: #F7C032;") 12%
+                        .tokenomics__category-name Team
+                    .tokenomics__category
+                        .tokenomics__percent(style="color: #B54ADB;") 5%
+                        .tokenomics__category-name Advisors
+                    .tokenomics__category
+                        .tokenomics__percent(style="color: #33A9E6;") 3%
+                        .tokenomics__category-name IDO
+                    .tokenomics__category
+                        .tokenomics__percent(style="color: #FF8181;") 5%
+                        .tokenomics__category-name Listing + Liquidity
+                    .tokenomics__category
+                        .tokenomics__percent(style="color: #40DDFF;") 33%
+                        .tokenomics__category-name Staking + P2E

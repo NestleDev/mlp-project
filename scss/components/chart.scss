@@ -1,16 +1,86 @@
 .chart{
-    display: flex;
-    justify-content: center;
-    &__img{
-        display: flex;
-        @include phones{
-            display: none;
+    position: relative;
+    width: 100%;
+    svg{
+        width: 100%;
+        height: 100%;
+        g{
+            cursor: pointer;
         }
-        &_mob{
-            display: none;
-            @include phones{
-                display: flex;
+        g > path:first-child{
+            stroke: #DADCE5;
+            @media screen and (max-width: 1150px) {
+               display: none;
             }
+        }
+        g:nth-child(1){
+            &:hover{
+                path:first-child{
+                    stroke: #87DE51;
+                }
+            }
+        }
+        g:nth-child(2){
+            &:hover{
+                path:first-child{
+                    stroke: #F7329C;
+                }
+            }
+        }
+        g:nth-child(3){
+            &:hover{
+                path:first-child{
+                    stroke: #3246F7;
+                }
+            }
+        }
+        g:nth-child(4){
+            &:hover{
+                path:first-child{
+                    stroke: #40DDFF;
+                }
+            }
+        }
+        g:nth-child(5){
+            &:hover{
+                path:first-child{
+                    stroke: #FF8181;
+                }
+            }
+        }
+        g:nth-child(6){
+            &:hover{
+                path:first-child{
+                    stroke: #33A9E6;
+                }
+            }
+        }
+        g:nth-child(7){
+            &:hover{
+                path:first-child{
+                    stroke: #B54ADB;
+                }
+            }
+        }
+        g:nth-child(8){
+            &:hover{
+                path:first-child{
+                    stroke: #F7C032;
+                }
+            }
+        }
+    }
+    &__title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: $custom-family;
+        font-size: 50px;
+        line-height: 80px;
+        @include phones{
+            font-size: 32px;
+            line-height: 45px;
         }
     }
 }

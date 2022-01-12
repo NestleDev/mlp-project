@@ -4,12 +4,138 @@
         padding: 40px 0;
     }
     &__container{
-        @include phones{
-            padding: 0 10px;
-        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     &__title{
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 46px;
+        @include phones{
+            margin-bottom: 40px;
+        }
+    }
+    &__wrap{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        @media screen and (max-width: 1150px) {
+            flex-direction: column;
+        }
+    }
+    &__chart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 546px;
+        padding: 0 10px;
+        box-sizing: content-box;
+        @media screen and (max-width: 1150px) {
+            order: 0;
+            margin-bottom: 40px;
+            width: 100%;
+            max-width: 546px;
+        }
+        @include phones{
+            padding: 0;
+            margin-bottom: 20px;
+        }
+    }
+    &__categories{
+        display: flex;
+        flex-direction: column;
+        margin-top: -42px;
+        @media screen and (max-width: 1150px) {
+            margin-top: 0;
+            order: 2;
+            flex-direction: column-reverse;
+        }
+        @include phones{
+            width: 100%;
+        }
+        &_reverse{
+            @media screen and (max-width: 1150px) {
+                order: 1;
+                flex-direction: column;
+            }
+        }
+    }
+    &__category{
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+        position: relative;
+        &-name{
+            font-weight: 700;
+        }
+        &_reverce{
+            flex-direction: row-reverse;
+            @media screen and (max-width: 1150px) {
+                flex-direction: row;
+            }
+            .tokenomics__percent{
+                margin-left: 20px;
+                margin-right: 0;
+                @media screen and (max-width: 1150px) {
+                    margin-left: 0;
+                    margin-right: 20px;
+                }
+            }
+        }
+        @include phones{
+            font-size: 16px;
+            line-height: 40px;
+            margin-bottom: 0;
+        }
+    }
+    &__percent{
+        font-family: $custom-family;
+        margin-right: 20px;
+        font-size: 25px;
+        @include phones{
+            font-size: 16px;
+            line-height: 40px;
+        }
+    }
+    &__total{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 50px;
+        background-color: $white-color;
+        border-radius: 20px;
+        margin-top: -65px;
+        @include phones{
+            padding: 20px;
+            margin-top: -23px;
+            width: 100%;
+        }
+    }
+    &__supply{
+        font-family: $custom-family;
+        font-size: 25px;
+        line-height: 30px;
+        white-space: nowrap;
+        margin-bottom: 10px;
+        color: $accent-color;
+        text-align: center;
+        @include phones{
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 0;
+            min-width: 255px;
+        }
+        &-desc{
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            @include phones{
+                font-size: 12px;
+            }
+        }
     }
 }
